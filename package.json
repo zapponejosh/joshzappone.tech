@@ -1,0 +1,30 @@
+{
+  "name": "joshzappone.tech",
+  "version": "1.0.0",
+  "description": "Portfolio page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zapponejosh/joshzappone.tech.git"
+  },
+  "author": "Josh Zappone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zapponejosh/joshzappone.tech/issues"
+  },
+  "homepage": "https://github.com/zapponejosh/joshzappone.tech#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
