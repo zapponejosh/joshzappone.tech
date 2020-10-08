@@ -1,3 +1,3 @@
 Personal protfolio page
 
-[joshzappone.tech](www.joshzappone.tech)
+  [Try Breakaway now on Heroku](http://www.joshzappone.tech)
