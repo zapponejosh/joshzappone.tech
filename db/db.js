@@ -28,7 +28,7 @@ const portfolioDB = [
     description: 'A project using Express, MySQL, and Handlebars.',
     repoLink: 'https://github.com/zapponejosh/burgerburger',
     deployLink: 'https://bugerburger-restuarant.herokuapp.com/',
-    preview: './assets/Images/burger-preview.jpg',
+    preview: './assets/Images/burger-preview.png',
   },
   {
     name: 'Day Planner',

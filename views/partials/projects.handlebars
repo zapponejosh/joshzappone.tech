@@ -1,9 +1,23 @@
-{{#each projects}}
-<h4>{{name}}</h4>
-<p>{{description}}</p>
-<p><a href="{{repoLink}}">View the code</a></p>
-<p><a href="{{deployLink}}">View the project</a></p>
-{{#if preview}}
-<img class="project-img" src="{{preview}}" alt="{{name}} preview image">
-{{/if}}
-{{/each}}
+<section class="project-section">
+  <h3 class="section-title">Featured projects</h3>
+
+  {{#each projects}}
+
+  <div class="project">
+    <div class="project-img">
+      {{#if preview}}
+      <img class="project-img" src="{{preview}}" alt="{{name}} preview image">
+      {{/if}}
+    </div>
+    <div class="project-content">
+      <h2>{{name}}</h2>
+      <p>{{description}}</p>
+      <p>
+        <a class="project-link" href="{{repoLink}}">View the code</a>
+        <a class="project-link" href="{{deployLink}}">View the project</a>
+      </p>
+    </div>
+  </div>
+  <hr class="project-split">
+  {{/each}}
+</section>

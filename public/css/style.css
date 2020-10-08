@@ -21,6 +21,7 @@
   --top-border-radius: 10px 10px 0 0;
   --btm-border-radius: 0 0 10px 10px;
   --button-border-radius: 2px;
+  --default-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
 
   font-size: 16px;
 }
@@ -35,13 +36,13 @@ h1 {
 h2 {
   font-family: "harmattan";
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 h3 {
   font-family: "harmattan";
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h4 {
@@ -97,6 +98,36 @@ p {
   min-width: 400px;
 }
 
+
+/* Nav styles */
+.nav {
+  position: absolute;
+  padding-top: 28px;
+  padding-right: 27px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 0 33px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-item:hover {
+  filter: brightness(115%);
+}
+
+.nav-item:active {
+  filter: brightness(115%);
+  transform: translateY(2px);
+}
+
+/* END NAV STYLES */
+
 /* Button styles */
 
 .button-group {
@@ -123,7 +154,7 @@ p {
 
   /* size comes from text & padding (no width/height) unless specified */
   padding: 0.5em 1em;
-  box-shadow: 0 4px 4px 0 #000;
+  box-shadow: var(--default-shadow);
 }
 
 .btn:active {
@@ -146,9 +177,6 @@ p {
   border-color: var(--secondary-color);
 }
 
-.project-img {
-  width: 50%;
-}
 
 /* hero styles */
 .hero {
@@ -186,8 +214,52 @@ h1.intro {
 }
 
 
-/* hero styles for mobile */
-@media only screen and (max-device-width: 950px) and (-webkit-min-device-pixel-ratio: 2) {
+/* Project section styles */
+.project-section {
+  max-width: 1000px;
+  margin: 15px auto;
+}
+
+.project-section .section-title {
+  margin-left: 35px;
+}
+
+.project {
+  display: flex;
+  justify-content: flex-start;
+  margin: 35px;
+}
+.project:first-of-type {
+  margin-top: 22px;
+}
+
+.project-img {
+  width: 246px;
+  margin-right: 1.1rem;
+  border-radius: 6px;
+}
+
+.project-img img {
+  object-fit: cover;
+  box-shadow: var(--default-shadow);
+
+}
+
+.project-content {
+  max-width: 594px;
+  margin-top: 11px;
+}
+
+.project-split {
+  max-width: 858px;
+  margin: 18px;
+  border: 0;
+  border-top: 1px solid #E0E0E0;
+}
+/* end project section styles */
+
+/* hero and nav styles for mobile */
+@media only screen and (max-device-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero {
     height: unset;
     min-height: 100vh;
@@ -198,7 +270,7 @@ h1.intro {
     text-align: center;
   }
   .hero-img {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 40px;
     height: 200px;
   }
@@ -211,6 +283,44 @@ h1.intro {
     width: 80%;
   }
   .hero-body .btn {
-    margin: 7px auto;
+    margin: 7px 6px;
   }
+
+  /* tab bar */
+  .nav {
+    position: fixed;
+    justify-content: space-evenly;
+    top: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    opacity: .9;
+    margin: 0 auto;
+  }
+  .nav-item {
+    padding: 10px 0;
+    color: var(--dark-primary-color);
+
+  }
+
+}
+
+@media only screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    max-width: 344px;
+    margin: 35px auto;
+  }
+
+  .project-img {
+    width: 100%;
+    margin: 0 0 6px;
+  }
+
+  .project-section .section-title {
+    margin: 0;
+    text-align: center;
+  }
+
+
 }
