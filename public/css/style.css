@@ -146,6 +146,10 @@ p {
   border-color: var(--secondary-color);
 }
 
+.project-img {
+  width: 50%;
+}
+
 /* hero styles */
 .hero {
   display: flex;
@@ -179,4 +183,34 @@ h1.intro {
 
 .hero-body .btn-primary {
   margin-left: 0;
+}
+
+
+/* hero styles for mobile */
+@media only screen and (max-device-width: 950px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    height: unset;
+    min-height: 100vh;
+    max-height: 800px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-img {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 200px;
+  }
+  .hero-img img {
+    border-radius: 50%;
+
+  }
+  .hero-body {
+    margin: 0 auto 40px;
+    width: 80%;
+  }
+  .hero-body .btn {
+    margin: 7px auto;
+  }
 }
