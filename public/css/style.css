@@ -264,7 +264,7 @@ h1.intro {
   background-color: var(--light-primary-color);
   min-height: 390px;
   margin-top: 32px;
-  padding: 32px;
+  padding: 32px 20px 40px;
 }
 
 .contact-section .section-title {
@@ -281,15 +281,21 @@ h1.intro {
 }
 
 .tile {
-  height: 295px;
   background-color: #fff;
   padding: 24px;
   border-radius: 4px;
   box-shadow: var(--default-shadow);
 }
 
-.t-1 , .t-2 {
+.t-1 {
   grid-column: span 1;
+  height: fit-content;
+}
+.t-2 {
+  grid-column: span 1;
+  min-height: 263px;
+  align-self: stretch;
+
 }
 
 .contact-link {
@@ -349,6 +355,11 @@ textarea:focus , input:focus {
 
 /* end contact section tiles */
 
+/* footer css */
+footer {
+  height: 182px;
+}
+/* end footer css */
 
 /* MEDIA QUERIES!!! */
 
@@ -421,7 +432,6 @@ textarea:focus , input:focus {
 @media only screen and (max-device-width: 760px) and (-webkit-min-device-pixel-ratio: 2) {
   .t-1 , .t-2 {
     grid-column: span 2;
-    height: fit-content;
   }
 }
 @media only screen and (max-device-width: 420px) and (-webkit-min-device-pixel-ratio: 2) {
