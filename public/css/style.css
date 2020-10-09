@@ -58,14 +58,16 @@ th,
 label {
   font-family: "lato";
   font-weight: 300;
-  font-size: 15px;
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 a {
   font-family: "lato";
-  font-weight: 300;
-  font-size: 15px;
-  color: var(--default-text);
+  font-weight: 400;
+  font-size: 1.03rem;
+  color: var(--primary-color);
+  margin-right: 10px;
 }
 
 body {
@@ -144,9 +146,6 @@ p {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-
-  /* create a small space when buttons wrap on 2 lines */
-  margin: 2px 10px;
 
   /* invisible border (will be colored on hover/focus) */
   border: solid 1px transparent;
@@ -258,6 +257,101 @@ h1.intro {
 }
 /* end project section styles */
 
+/* Contact section styles */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-primary-color);
+  min-height: 390px;
+  margin-top: 32px;
+  padding: 32px;
+}
+
+.contact-section .section-title {
+  grid-column: span 2;
+}
+
+.contact-tiles {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 418px));
+  column-gap: 28px;
+  row-gap: 22px;
+}
+
+.tile {
+  height: 295px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: var(--default-shadow);
+}
+
+.t-1 , .t-2 {
+  grid-column: span 1;
+}
+
+.contact-link {
+  display: block;
+  margin-bottom: 1rem;
+
+}
+
+
+/* form */
+.form-group {
+  display: flex;
+}
+
+#email, .f-email-group {
+  width: 100%;
+}
+.contact-section label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contact-section input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1.6px solid var(--dark-primary-color);
+  border-radius: 2px;
+}
+
+textarea {
+  margin-bottom: 10px;
+  resize: none;
+  width: 100%;
+  border: 1.6px solid var(--dark-primary-color);
+  border-radius: 2px;
+  
+}
+
+textarea:focus , input:focus {
+  outline: none;
+  background-color: var(--p-variant-color);
+}
+
+.contact-section button {
+  font-size: .8rem;
+}
+
+#response {
+  float: right;
+  margin-top: 10px;
+  margin-right: 8px;
+  color: rgb(64, 170, 64);
+  font-size: .8rem;
+  font-style: italic;
+
+}
+
+/* end contact section tiles */
+
+
+/* MEDIA QUERIES!!! */
+
 /* hero and nav styles for mobile */
 @media only screen and (max-device-width: 1020px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero {
@@ -304,6 +398,7 @@ h1.intro {
 
 }
 
+/* media query for project display */
 @media only screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
   .project {
     flex-direction: column;
@@ -317,10 +412,24 @@ h1.intro {
     margin: 0 0 6px;
   }
 
-  .project-section .section-title {
+ .section-title {
     margin: 0;
     text-align: center;
   }
+}
 
+@media only screen and (max-device-width: 760px) and (-webkit-min-device-pixel-ratio: 2) {
+  .t-1 , .t-2 {
+    grid-column: span 2;
+    height: fit-content;
+  }
+}
+@media only screen and (max-device-width: 420px) and (-webkit-min-device-pixel-ratio: 2) {
+  .form-group {
+    flex-direction: column;
+  }
 
+  #name, .f-name-group {
+    width: 100%;
+  }
 }

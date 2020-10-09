@@ -1,8 +1,9 @@
 <section class="contact-section">
-  <h3 class="section-title">Contact</h3>
 
   <div class="contact-tiles">
-    <div class="tile">
+    <h3 class="section-title">Contact</h3>
+
+    <div class="tile t-1">
       <h2 class="tile-header">Reach out on the interwebs</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam autem sapiente quibusdam esse recusandae
         nihil doloribus velit reprehenderit dicta architecto maxime saepe, necessitatibus veritatis eos deleniti
@@ -11,22 +12,27 @@
       <a href="#" class="contact-link">Connect on LinkedIn</a>
       <a href="#" class="contact-link">Get to know me</a>
     </div>
-    <div class="tile">
+    <div class="tile t-2">
       <form action="/" id="contact">
         <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" name="name" id="name" aria-describedby="nameInput" required>
+          <div class="f-name-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="nameInput" required>
+          </div>
 
-          <label for="email">Email</label>
-          <input type="email" class="form-control" name="email" id="email" aria-describedby="emailInput" required>
+          <div class="f-email-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailInput" required>
+          </div>
+
         </div>
-        <div class="form-group">
+        <div>
           <label for="message">Message</label>
           <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
         </div>
-        <div class="form-group">
-          <button type="submit">Submit form</button>
-          <p id="response"></p>
+        <div>
+          <button class="btn btn-primary" type="submit">Release the owls</button>
+          <span id="response">Message sent!</span>
         </div>
       </form>
     </div>
