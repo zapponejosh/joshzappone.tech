@@ -340,7 +340,7 @@ textarea:focus , input:focus {
 }
 
 .contact-section button {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 #response {
@@ -348,7 +348,7 @@ textarea:focus , input:focus {
   margin-top: 10px;
   margin-right: 8px;
   color: rgb(64, 170, 64);
-  font-size: .8rem;
+  font-size: .9rem;
   font-style: italic;
 
 }
@@ -357,7 +357,27 @@ textarea:focus , input:focus {
 
 /* footer css */
 footer {
+  margin: 32px;
   height: 182px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  margin: 26px;
+}
+
+.logo {
+  color: var(--dark-primary-color);
+  text-decoration: none;
+  padding: 17px;
+  margin: 0;
+}
+
+.logo:hover {
+  color: var(--secondary-color);
 }
 /* end footer css */
 
