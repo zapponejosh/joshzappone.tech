@@ -5,6 +5,7 @@ class Project {
     this.repoLink = options.repoLink;
     this.deployLink = options.deployLink;
     this.stack = options.stack;
+    this.preview = options.preview;
   }
 }
 
@@ -15,6 +16,7 @@ const portfolioDB = [
     repoLink: 'https://github.com/MVC-5/breakaway',
     deployLink: 'https://breakaway-vacay.herokuapp.com/',
     preview: './assets/Images/breakaway-preview.jpg',
+    stack: ['Node.js', 'MySQL', 'Sequelize', 'Handlebars', 'Nodemailer', 'Cloudinary'],
   },
   {
     name: 'Discover Serenity',
@@ -22,6 +24,7 @@ const portfolioDB = [
     repoLink: 'https://github.com/calebkirkish/discover-serenity',
     deployLink: 'https://calebkirkish.github.io/discover-serenity/',
     preview: './assets/Images/serenity-preview.png',
+    stack: ['SemanticUI', 'CSS Grid', 'APIs', 'jQuery'],
   },
   {
     name: 'BurgerBurger',
@@ -29,6 +32,7 @@ const portfolioDB = [
     repoLink: 'https://github.com/zapponejosh/burgerburger',
     deployLink: 'https://bugerburger-restuarant.herokuapp.com/',
     preview: './assets/Images/burger-preview.png',
+    stack: ['Node.js', 'Express', 'MySQL', 'Handlebars'],
   },
   {
     name: 'Day Planner',
@@ -36,6 +40,7 @@ const portfolioDB = [
     repoLink: 'https://github.com/zapponejosh/hw-5-day-planner',
     deployLink: 'https://zapponejosh.github.io/hw-5-day-planner/',
     preview: './assets/Images/day-planner-preview.png',
+    stack: ['jQuery', 'Bootstrap', 'Moment.js'],
   },
   {
     name: 'Weather Dashboard',
@@ -43,6 +48,7 @@ const portfolioDB = [
     repoLink: 'https://github.com/zapponejosh/hw-6-weather-app',
     deployLink: 'https://zapponejosh.github.io/hw-6-weather-app/',
     preview: './assets/Images/weather-preview.png',
+    stack: ['CSS Grid/Flexbox', 'OpenWeather API', 'Geolocation', 'Moment.js'],
   },
 ];
 

@@ -12,6 +12,11 @@
     <div class="project-content">
       <h2>{{name}}</h2>
       <p>{{description}}</p>
+      <div class="tech-stack">
+        {{#each stack}}
+      <p class="tech-badge">{{this}}</p>
+        {{/each}}
+      </div>
       <p>
         <a class="project-link" href="{{repoLink}}">View the code</a>
         <a class="project-link" href="{{deployLink}}">View the project</a>

@@ -255,6 +255,25 @@ h1.intro {
   border: 0;
   border-top: 1px solid #E0E0E0;
 }
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 350px;
+}
+
+.tech-badge {
+  margin-bottom: 7px;
+  margin-right: 10px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: var(--dark-primary-color);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+}
+
 /* end project section styles */
 
 /* Contact section styles */
