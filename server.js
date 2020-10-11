@@ -19,6 +19,7 @@ app.set('view engine', 'handlebars');
 
 // all the good stuff here
 require('./routes/html-routes')(app);
+require('./routes/api-routes')(app);
 
 // catch all rendering 404 page
 app.get('/*', (req, res) => {
