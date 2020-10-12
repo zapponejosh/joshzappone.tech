@@ -4,14 +4,14 @@ function formSubmit(event) {
   event.preventDefault();
 
   const formResponse = document.getElementById('response');
-
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+  formResponse.innerHTML = '';
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const message = document.getElementById('message');
   const data = {
-    name,
-    email,
-    message,
+    name: name.value,
+    email: email.value,
+    message: message.value,
   };
   console.log(data);
   $.ajax({
@@ -20,14 +20,19 @@ function formSubmit(event) {
     data,
     dataType: 'json',
     success(response) {
+      formResponse.classList.remove('error');
+
       formResponse.innerHTML = `${response.msg}`;
       console.log('success');
     },
     error(response) {
-      formResponse.innerHTML = `${response.msg}`;
       console.log(response);
+      formResponse.classList.add('error');
+
+      formResponse.innerHTML = `${response.responseJSON.msg}`;
     },
   });
+  form.reset();
 }
 
 form.addEventListener('submit', formSubmit);

@@ -371,7 +371,9 @@ textarea:focus , input:focus {
   color: rgb(64, 170, 64);
   font-size: .9rem;
   font-style: italic;
-
+}
+.error {
+  color: rgb(190, 76, 76) !important;
 }
 
 /* end contact section tiles */
