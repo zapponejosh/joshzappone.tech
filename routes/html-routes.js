@@ -9,8 +9,4 @@ module.exports = (app) => {
     };
     res.render('index', hbsObject);
   });
-
-  app.get('/about', (req, res) => {
-    res.render('about');
-  });
 };

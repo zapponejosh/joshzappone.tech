@@ -58,8 +58,8 @@ th,
 label {
   font-family: "lato";
   font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
 a {
@@ -216,7 +216,7 @@ h1.intro {
 /* Project section styles */
 .project-section {
   max-width: 1000px;
-  margin: 15px auto;
+  margin: 35px auto;
 }
 
 .project-section .section-title {
@@ -249,7 +249,7 @@ h1.intro {
   margin-top: 11px;
 }
 
-.project-split {
+.split {
   max-width: 858px;
   margin: 18px;
   border: 0;
@@ -275,6 +275,20 @@ h1.intro {
 }
 
 /* end project section styles */
+
+/* About section */
+
+.about-section .section-title {
+  margin-left: 35px;
+}
+
+
+.about-body {
+  max-width: 850px;
+  margin: 15px 0 25px 45px;
+}
+
+/* End about section */
 
 /* Contact section styles */
 .contact-section {
@@ -460,6 +474,14 @@ footer {
     max-width: 344px;
     margin: 35px auto;
     padding: 0 18px;
+  }
+
+  .about-body {
+    margin: 15px 18px;
+  }
+
+  .about-section .section-title {
+    margin: 0;
   }
 
   .project-img {
