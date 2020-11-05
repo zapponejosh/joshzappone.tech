@@ -19,6 +19,14 @@ const portfolioDB = [
     stack: ['Node.js', 'MySQL', 'Sequelize', 'Handlebars', 'Nodemailer', 'Cloudinary'],
   },
   {
+    name: 'theDirectory',
+    description: 'A ReactJS app using functional components and custom hooks to create a searchable and sortable table',
+    repoLink: 'https://github.com/zapponejosh/thedirectory',
+    deployLink: 'https://zapponejosh.github.io/thedirectory/',
+    preview: './assets/Images/thedirectory-preview.png',
+    stack: ['ReactJs', 'Custom hooks', 'Functional components'],
+  },
+  {
     name: 'Discover Serenity',
     description: 'A project using data from APIs to find hikes for the user that may be less populated during a time when social distancing is important.',
     repoLink: 'https://github.com/calebkirkish/discover-serenity',
