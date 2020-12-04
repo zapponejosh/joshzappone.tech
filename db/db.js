@@ -11,6 +11,23 @@ class Project {
 
 const portfolioDB = [
   {
+    name: '5 Sherpas',
+    description:
+      'This app generates weekly suggestions of constructive activities based on user profiles with selected aspects of life, such as wellness, career, and relationships among others, where the user would like to focus. Each week users get a new set of challenges, and will see progress displayed on a gorgeous chart as challenges are completed.',
+    repoLink: 'https://github.com/MVC-5/5sherpas',
+    deployLink: 'https://www.5sherpas.com/',
+    preview: './assets/Images/5sherpas-preview.png',
+    stack: [
+      'ReactJs',
+      'MongoDB',
+      'SemanticUI',
+      'D3',
+      'PassportJS',
+      'Node/Express',
+      'Heroku',
+    ],
+  },
+  {
     name: 'Breakaway',
     description: 'A project to help facilitate a healthy company culture that celebrates employee self care and makes the process of taking PTO frictionless for managers and employees and maybe even a little fun!',
     repoLink: 'https://github.com/MVC-5/breakaway',
