@@ -13,7 +13,7 @@ const portfolioDB = [
   {
     name: '5 Sherpas',
     description:
-      'This app generates weekly suggestions of constructive activities based on user profiles with selected aspects of life, such as wellness, career, and relationships among others, where the user would like to focus. Each week users get a new set of challenges, and will see progress displayed on a gorgeous chart as challenges are completed.',
+      'This app generates weekly suggestions for constructive activities based on user profiles with the desired dimensions of life, such as wellness, career, and relationships among others, the user would like to focus on. Each week users get a new set of challenges and will see progress displayed on a gorgeous chart as challenges are completed.',
     repoLink: 'https://github.com/MVC-5/5sherpas',
     deployLink: 'https://www.5sherpas.com/',
     preview: './assets/Images/5sherpas-preview.png',
