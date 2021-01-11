@@ -14,12 +14,16 @@
       <p>{{description}}</p>
       <div class="tech-stack">
         {{#each stack}}
-      <p class="tech-badge">{{this}}</p>
+        <p class="tech-badge">{{this}}</p>
         {{/each}}
       </div>
       <p>
-        <a class="project-link" href="{{repoLink}}">View the code</a>
-        <a class="project-link" href="{{deployLink}}">View the project</a>
+        {{#if repoLink}}
+        <a class="project-link" target="_blank" href="{{repoLink}}">View the code</a>
+        {{/if}}
+        {{#if deployLink}}
+        <a class="project-link" target="_blank" href="{{deployLink}}">View the project</a>
+        {{/if}}
       </p>
     </div>
   </div>

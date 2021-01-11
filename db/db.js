@@ -11,6 +11,22 @@ class Project {
 
 const portfolioDB = [
   {
+    name: 'Gigi Zappone Counseling',
+    description:
+      'A marketing website built using NextJS and the Sanity CMS for a local counseling practice. Built with a focus on SEO to drive client inquiries. All content is created using the Sanity Studio.',
+    deployLink: 'https://gigizapponecounseling.com/',
+    preview: './assets/Images/GZC-preview.png',
+    stack: [
+      'ReactJs',
+      'NextJs',
+      'Sanity',
+      'AWS Lambda',
+      'Netlify',
+      'Google Search Console',
+      'CSS modules',
+    ],
+  },
+  {
     name: '5 Sherpas',
     description:
       'This app generates weekly suggestions for constructive activities based on user profiles with the desired dimensions of life, such as wellness, career, and relationships among others, the user would like to focus on. Each week users get a new set of challenges and will see progress displayed on a gorgeous chart as challenges are completed.',
@@ -42,6 +58,13 @@ const portfolioDB = [
     deployLink: 'https://zapponejosh.github.io/thedirectory/',
     preview: './assets/Images/thedirectory-preview.png',
     stack: ['ReactJs', 'Custom hooks', 'Functional components'],
+  },
+  {
+    name: 'The Office - Employee Tracker',
+    description: 'Hire, fire, reassign, and more with thie command line employee tracker using mySQL and Node.js.',
+    repoLink: 'https://github.com/zapponejosh/mysql-employee-tracker',
+    preview: './assets/Images/the-office-preview.png',
+    stack: ['Node.js', 'mySQL', 'Inquirer'],
   },
   {
     name: 'Discover Serenity',
